@@ -14,6 +14,13 @@ pipeline {
             }
         }
 
+        
+        stage('Manual Check') {
+            steps {
+                input message: 'Apply this Terraform?', ok: 'Yes'
+            }
+        }
+
         stage('Apply Terraform') {
             steps {
                 sh 'terraform apply --auto-approve'
