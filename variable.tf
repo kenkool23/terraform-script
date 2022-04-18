@@ -5,7 +5,7 @@ variable "my_type" {
 
 variable "my_tag" {
   type = string
-  default = "kenneth_terra"
+  default = "newtag_terra"
 }
 
 variable "my_image" {
